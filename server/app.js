@@ -12,7 +12,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 //create
-app.post("/insert", (request, response) => {});
+app.post("/insert", (request, response) => {
+  console.log(request.body);
+});
 
 //read
 app.get("/getAll", (request, response) => {
